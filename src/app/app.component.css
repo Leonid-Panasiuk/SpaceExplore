@@ -137,8 +137,8 @@ body {
 }
 
 .camera-view-wrap {
-    /* position: absolute;
-    bottom: -160px; */
+    position: absolute;
+    bottom: -160px;
     display: block;
     font-family: 'Kumbh Sans', sans-serif;
     width: 100%;
@@ -188,15 +188,7 @@ body {
     }
 } 
 
-.bottom-astronaut {
-    position: absolute;
-    bottom: 0;
-}
 
 
   
-.active{
-    background-color: lightseagreen;
-  }
-
 
