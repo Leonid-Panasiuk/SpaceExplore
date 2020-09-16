@@ -1,0 +1,202 @@
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 15px;
+    text-align: center;
+    
+}
+
+.logo {
+    width: 72px;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+.menu-text-wrap p {
+    color: #F2F2F2;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.7;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main-heading {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.main-heading h1 {
+    color: #F2F2F2;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.main-heading img {
+    width: 50px;
+}
+
+ @keyframes fly {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 500%;
+    }
+
+
+    100% {
+        background-position: 0% 0%;
+    }
+} 
+
+body {
+    background-image: url(../assets/stars.png);
+    background-repeat: repeat;
+    height: 150vh;
+    animation: fly 150s infinite;
+    background-color: #14161E;
+    position: relative;
+}
+
+.rovers-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.rover-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rover-img {
+    width: 200px;
+    height: 200px;
+    filter: grayscale(80%);
+    transition: all 0.5s;
+}
+
+.rover-img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.rover-select-btn {
+    margin: 10px 10px;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.rover-select-btn:hover {
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #1a531d;
+    transform: scale(1.1);
+}
+
+.rover-select-btn:focus {
+    outline: none;
+}
+
+.camera-view-wrap {
+    /* position: absolute;
+    bottom: -160px; */
+    display: block;
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.camera-view-wrap p {
+    color: #F2F2F2;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.camera-select {
+    list-style: none;
+}
+
+.camera-select li {
+    margin: 15px 0;
+}
+
+.camera-select a {
+    text-decoration: none;
+    color: #f3e3a4;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+
+.camera-select a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid ;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
+} 
+
+.bottom-astronaut {
+    position: absolute;
+    bottom: 0;
+}
+
+
+  
+.active{
+    background-color: lightseagreen;
+  }
+
+

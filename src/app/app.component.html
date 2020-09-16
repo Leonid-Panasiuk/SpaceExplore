@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceExplore</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo-wrap">
+            <img class="logo" src="../assets/logo.svg" alt="logo">
+        </div>
+
+        <button (click)=toggleMenu() class="menu-btn" type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div [@fadeInOut] *ngIf="isMenuOpen" class="menu-text-wrap">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, odit totam? Beatae ducimus, non
+                provident, mollitia velit sapiente incidunt eligendi nobis dignissimos quasi omnis voluptatem officia
+                quibusdam vel nisi in!</p>
+        </div>
+    </div>
+
+    <div class="select-rover-wrap">
+
+        <div class="main-heading">
+            <h1>Choose your rover</h1>
+            <img src="../assets/astronaut.svg" alt="astronaut">
+        </div>
+
+        <div class="rovers-container">
+            <div class="rover-item">
+                <img class="rover-img" src="../assets/rover-1.svg" alt="curiosity">
+                <button (click)="showView.previous = !showView.previous;
+            showView.current = false;
+            showView.next = false" class="rover-select-btn">Select
+                </button>
+
+                <div *ngIf="showView.previous" [@fadeInOut] class="camera-view-wrap">
+                    <p>Please select camera view:</p>
+                    <ul class="camera-select">
+                        <li>
+                            <a href="">Front</a>
+                        </li>
+                        <li>
+                            <a href="">Rear</a>
+                        </li>
+                        <li>
+                            <a href="">Sol</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rover-item">
+                <img class="rover-img" src="../assets/rover-2.svg" alt="opportunity">
+                <button (click)="showView.current = !showView.current;
+            showView.previous = false;
+            showView.next = false" class="rover-select-btn">Select
+                </button>
+
+                <div *ngIf="showView.current" [@fadeInOut] class="camera-view-wrap">
+                    <p>Please select camera view:</p>
+                    <ul class="camera-select">
+                        <li>
+                            <a href="">Front</a>
+                        </li>
+                        <li>
+                            <a href="">Rear</a>
+                        </li>
+                        <li>
+                            <a href="">Sol</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rover-item">
+                <img class="rover-img" src="../assets/rover-3.svg" alt="spirit">
+                <button (click)="showView.next = !showView.next;
+            showView.previous = false;
+            showView.current = false" class="rover-select-btn">Select
+                </button>
+
+                <div *ngIf="showView.next" [@fadeInOut] class="camera-view-wrap">
+                    <p>Please select camera view:</p>
+                    <ul class="camera-select">
+                        <li>
+                            <a href="">Front</a>
+                        </li>
+                        <li>
+                            <a href="">Rear</a>
+                        </li>
+                        <li>
+                            <a href="">Sol</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
