@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations'
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
