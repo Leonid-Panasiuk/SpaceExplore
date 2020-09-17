@@ -301,6 +301,10 @@ body {
         font-size: 22px;
     }
 
+    .warn-wrap {
+        padding: 0 10px;
+    }
+
     .rovers-container {
         flex-direction: column;
     }

@@ -54,7 +54,7 @@
             <div class="photos-wrap" *ngIf='!loading && photos.length > 0'>
                 <img *ngFor='let photo of photos' [src]='photo.img_src'>
             </div>
-            <div *ngIf='!loading && photos.length === 0'>
+            <div class="warn-wrap" *ngIf='!loading && photos.length === 0'>
                 <p class="warn">Please select another sol or camera</p>
             </div>
             <div class="load-more-btn-wrap">
